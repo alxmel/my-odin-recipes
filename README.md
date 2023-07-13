@@ -1,2 +1,2 @@
-# my-odin-recipes
-Repository to house the HTML Odin Project project
+# My Odin Recipes
+This is a review of the HTML learning section of The Odin Project
