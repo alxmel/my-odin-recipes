@@ -1,60 +1,45 @@
+* {
+    box-sizing: border-box;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;    
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.homepage {
-    background-color: deepskyblue;
-}
-
-.recipe-link {
-    list-style-type: square;
-    color: hotpink;
-}
-
-a {
-    background-color: black;
-    color: white;
-}
-
-.body-pasta {
-    background-color: black;
-    color: white;
-    font-size: 16px;
-}
-
-.instructions {
-    list-style-type: lower-alpha;
-}
-
-.pizza-body {
-    border: 14px solid red;
-    background-color: azure;
-}
-
-/* all child elements of the pizza page applying default border */
-.pizza-body>* {
-    border: 2px dotted red;
-}
-
-.pizza-body h1 {
-    border: 10px solid red;
-    border-radius: 8px;
-}
-
-.pizza-image {
-    border: 8px solid red;
-}
-
-.pizza-body h2 {
-    border: 4px solid red;
-}
-
-
-.sushi-body {
-    text-align: center;
-    background-color: ghostwhite;
-}
-
-.sushi-body ul, ol {
+img {
+    width: 300px;
     display: inline-block;
+}
+
+/* Changing the image to be to the left and in line with the text, instead of vertical */
+.recipe-card {
+    width: 1000px;
+    margin: 20px auto;
+    background-color: lightblue;
+
+}
+
+.recipe-content {
+    display: inline-block;
+    padding: 20px;
+    width: 700px;
+    background-color: lightcoral;
+}
+
+
+.recipe-links a {
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.recipe-content .ingredients {
+    background-color: lightgreen;
+    font-style: italic;
+    padding: 1px 3px;
+    margin: 0 -3px;
 }
