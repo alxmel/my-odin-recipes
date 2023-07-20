@@ -6,29 +6,50 @@
         <title>Pizza Recipe</title>
     </head>
 
-    <body class="pizza-body">
-        <h1>Welcome to my Pizza Recipe!</h1>
-        <img class="pizza-image" src="../images/pizza.jpg" alt="A picture of a delicious pizza ready to be eaten.">
-        <h2>Description</h2>
-        <p>
-            Here is the delicious pizza recipe! We need <strong>tomatoes</strong>, <strong>cheese</strong>, <strong>dough</strong>,
-            and finally <strong>pepperoni</strong>! We will also be needing a <em>brick</em> oven to cook the pizza in.
-            Then you will be able to enjoy this goodness!
-        </p>
-        <h2>Ingredients</h2>
-        <ul>
-            <li>Tomatoes</li>
-            <li>Cheese</li>
-            <li>Dough</li>
-            <li>Pepperoni</li>
-        </ul>
-        <h2>Steps</h2>
-        <ol>
-            <li>Spread the Dough</li>
-            <li>Spread the Tomato Sauce</li>
-            <li>Pour the Cheese</li>
-            <li>Add the Pepperoni</li>
-            <li>Bake!</li>
-        </ol>
+    <body>
+        <div class="container">
+            <div class="recipe-card">
+                <img class="pizza-image" src="../images/pizza.jpg" alt="A picture of a delicious pizza ready to be eaten.">
+                <div class="recipe-content pizza">
+                    <h1>Welcome to my Pizza Recipe!</h1>
+                    <h2>Description</h2>
+                    <p>
+                        Here is the delicious pizza recipe in all of it's cheesy and pepperoni goodness! The ingredeints include: <span class="ingredients">Tomatoes,
+                        Cheese, Dough, Pepperoni</span>. Another very important item needed in this recipe is a <strong>Brick</strong> oven to cook the pizza in!
+                        This adds a layer of flavor that will make you further enjoy this gooey goodness!
+                    </p>
+                    <div class="recipe-overview pizza">
+                        <ul>
+                            <li>
+                                <h3>Preperation Time</h3>
+                                <p>45 minutes</p>
+                            </li>
+                            <li>
+                                <h3>Difficulty</h3>
+                                <p>Medium</p>
+                            </li>
+                            <li>
+                                <h3>Tastiness</h3>
+                                <p>5/5</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="recipe-steps pizza">
+                        <h2>Steps</h2>
+                        <ol>
+                            <li>Spread the Dough</li>
+                            <li>Spread the Tomato Sauce</li>
+                            <li>Pour the Cheese</li>
+                            <li>Add the Pepperoni</li>
+                            <li>Bake!</li>
+                        </ol>
+                    </div>
+                    <div class="recipe-links">
+                        <a href="#">Share Recipe</a>
+                        <a href="#">Save Recipe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
