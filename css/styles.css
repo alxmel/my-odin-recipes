@@ -15,16 +15,24 @@ img {
     vertical-align: top;
 }
 
+.container.pizza {
+    color: white;
+}
+
 /* Changing the image to be to the left and in line with the text, instead of vertical */
 .recipe-card {
     width: 1200px;
-    margin: 20px auto;
+    margin: 5px auto;
     height: 700px;
     border-style: solid;
     border-color: grey;
     background-color: floralwhite;
     /* background-color: ghostwhite; */
 
+}
+
+.recipe-card.pizza {
+    background-color: indianred;
 }
 
 .recipe-content {
@@ -35,6 +43,7 @@ img {
     vertical-align: top;
     height: 600px;
 }
+
 
 .recipe-content h1 {
     font-size: 35px;
@@ -62,6 +71,11 @@ img {
     text-align: center;
 }
 
+.recipe-overview.pizza ul {
+    background-color: lightcoral;    
+}
+
+
 .recipe-overview li {
     display: inline-block;
     margin-right: 20px;
@@ -77,6 +91,10 @@ img {
     margin: 0 -3px;
 }
 
+.recipe-content.pizza .ingredients {
+    background-color: yellow;
+    color: black;
+}
 
 .recipe-steps {
     display: inline-block;
@@ -110,3 +128,53 @@ img {
     padding: 10px;
 }
 
+/* Flexbox for Pizza page */
+.header.pizza {
+    border: 3px solid #ffcc5c;
+    margin: 20px 5em auto 5em;
+    height: auto;
+    display: flex;
+    background-color: gainsboro;
+    font-size: 1.5em;
+    color: black;
+}
+
+/* Selecting all of the child objects of the container to apply general styling */
+.header.pizza > div {
+    border: 1px solid dimgrey;
+    border-top: none;
+    border-bottom: none;
+    flex: 1;
+    text-align: center;
+}
+
+.header.pizza > .home {
+    border-left: none;
+}
+
+.header.pizza > .recipes {
+    border-left: none;
+}
+
+.header.pizza > .blog {
+    border-left: none;
+}
+
+.header.pizza > .favorites {
+    border-left: none;
+}
+
+
+/* Commenting this out allows ONLY the "search" in our flex container to flex, while the other elements
+are all staying at a fixed width. */
+/* .header.pizza > div {
+    flex: 1;
+} */
+
+/* When there's only 1 element doing flexing, the actual value to 'flex: ' doesn't matter at all, they will all
+equate to 1 so you can have any value there. They matter when you have more than 1 element doing flexing */
+.header.pizza > .search {
+    /* flex: 1; */
+    border-right: none;
+    border-left: none;
+}
